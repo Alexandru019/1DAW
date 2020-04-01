@@ -1,0 +1,21 @@
+public class Test {
+ public static void main (String[] arg){
+
+ Animal anim= new Perros("simon") ;
+ System.out.println("Constructor animal, nombre del animal :"+anim.getNombre());
+ Perros Perros = (Perros) anim;
+System.out.println("Constructor perro, nombre :"+Perros.getNombre());
+ Animal animalPolimorfico= new Perros("paco");
+ System.out.println("Constructor animal, nombre del animal :"+animalPolimorfico.getNombre());
+ Perros Perros1 = (Perros) animalPolimorfico;
+System.out.println("Constructor perro, nombre :"+Perros1.getNombre());
+ Animal gat=new Gatos("mimi");
+ System.out.println("Constructor animal, nombre del animal :"+gat.getNombre());
+Gatos Gatos = (Gatos) gat;
+ System.out.println("Constructor gato, nombre :"+Gatos.getNombre());
+anim.TipoAnimal();
+animalPolimorfico.TipoAnimal();
+gat.TipoAnimal();
+
+} 
+}

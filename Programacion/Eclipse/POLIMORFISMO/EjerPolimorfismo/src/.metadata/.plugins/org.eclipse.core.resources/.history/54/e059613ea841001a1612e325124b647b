@@ -1,0 +1,9 @@
+
+public class Perros extends Animal {
+
+	public Perros(String nombre) {
+		Nombre = nombre;
+	}
+	
+	
+}

@@ -1,0 +1,48 @@
+
+		-----ComandosImportantes-----
+su + nombre de usuario
+who -u
+sh (./)--------> Ejecutar ficheros sh
+ifconfig ------> Para saber la ip que tenemos
+passwd --------> asignar o cambiar la contraseña a algun usuario
+sudo ----------> Ejecutar con permisos de superusuario
+date ----------> Fecha de los archivos
+df -h ---------> Para saber como esta nuestro disco duro desde la terminal
+echo ----------> Para mostrar algo por salida estandar
+free ----------> Para saber cuanta memoria RAM tengo libre
+tar -----------> descomprimir fichero
+head ----------> Mostrar las primeras 10 lineas de un fichero
+tail ----------> Mostrar las ultimas 10 lineas de un  fichero
+su ------------> Cambio de usuario en terminal
+
+
+
+		-----ComandosInstalaciones-----
+sudo add-apt-repository
+sudo apt-get update
+sudo apt-get install
+sudo apt-get remove
+sudo apt-get upgrade
+dpkg
+
+
+
+		------Comandos de Usuarios------
+useradd
+groupadd nomgrupo      crea un grupo
+useradd -g nombregrupo nombreusuario    añade un usuario a un grupo
+cat /etc/passwd          para ver usuarios
+useradd nombrequequieras -m	obliga a crear la carpeta personal
+useradd nombrequequieras -m -d /home/nombrequequieras	obliga a crear la carpeta y le pone el nombre que quieras
+userdel nombreusuario             elimina usuarios
+userdel -r nombreusuario        elimina usuario y carpeta personal
+chmod 123 nomfichero           cambia los permisos
+chown nomusu nomfichero        cambia el usuario propietario
+chgrp nomgrp nomfichero        cambia el grupo proietario
+
+		
+
+		-----Filtrar-----
+grep "hola" mifich.txt
+grep -c "hola" mifich.txt	cuenta las veces que aparece esa pregunta
+grep -i "sOy" mifich.txt	no distinguirá entre mayusculas y minusculas

@@ -1,0 +1,19 @@
+public class Test {
+ public static void main (String[] arg){
+
+ Animal anim= new Perros("simon") ;
+ System.out.println();
+ Perros Perros = (Perros) anim;
+System.out.println();
+ Animal animalPolimorfico= new Perros("paco");
+ System.out.println();
+ Perros Perros1 = (Perros) animalPolimorfico;
+System.out.println();
+ Animal gat=new Gatos("mimi");
+ System.out.println();
+Gatos Gatos = (Gatos) gat;
+ System.out.println();
+anim.TipoAnimal();
+animalPolimorfico.TipoAnimal();
+gat.TipoAnimal();
+} 

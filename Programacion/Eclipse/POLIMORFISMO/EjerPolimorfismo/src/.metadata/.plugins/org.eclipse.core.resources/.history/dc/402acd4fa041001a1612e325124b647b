@@ -1,0 +1,11 @@
+public class ConjuntoDeFiguras {
+ Figura[]A;
+ ConjuntoDeFiguras(){
+ A = new Figura[10];
+ }
+ void añade(Figura f){ }
+
+ double areaTotal(){ }
+
+ void imprimeTodo(){}
+}

@@ -1,0 +1,14 @@
+
+public class Animal {
+	private String Nombre;
+
+	public Animal(String nombre) {
+		Nombre = nombre;
+	}
+	public void TipoAnimal() {
+		System.out.println();
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+}

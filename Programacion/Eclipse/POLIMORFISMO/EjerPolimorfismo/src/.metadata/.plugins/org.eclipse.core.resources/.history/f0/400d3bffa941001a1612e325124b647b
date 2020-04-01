@@ -1,0 +1,10 @@
+
+public class Gatos extends Animal {
+
+	public Gatos(String nombre) {
+		super(nombre);
+	}
+
+	
+
+}

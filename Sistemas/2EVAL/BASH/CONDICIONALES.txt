@@ -1,0 +1,49 @@
+    -----CONDICIONALES DE CADENAS-----
+    
+==  Compara si son iguales las cadenas 
+-z  Comprueba que la cadena está vacia
+-n  Comprueba que la cadena no está vacia
+!=  Devuelve true si las cadenas no son iguales 
+ 
+    -----CONDICIONALES ARITMÉTICOS-----
+
+-eq
+-ne
+-gt
+-ge
+-lt
+-le
+
+    -----CONDICIONALES DE FICHEROS-----
+
+-f <ruta del fichero>       Comprueba que es un fichero,devuelve true
+-d <ruta del directorio>       Comprueba que es un directorio,devuelve true
+-s <ruta del fichero>       Comprueba que el fichero no está vacío,devuelve true
+-r <ruta del fichero o directorio>      Comprueba el permiso de lectura
+-w <ruta del fichero o directorio>      Comprueba el permiso de escritura
+-x <ruta del fichero o directorio>      Comprueba el permiso de ejecucion
+
+    -----BUCLES-----
+
+for ((i=0;i<5;i++));
+do
+    echo "hola"
+done
+
+for i in 1 2 3 4 5
+do
+    echo "Welcome i veces" 
+done
+
+for i in $(ls /home)        Por cada resultado que encuentre del ls hará lo que le digamos
+do
+
+done
+
+    -----Asignar a una variable instrucciones de Linux-----
+
+#!/bin/bash
+
+resultls=$(ls /home)
+echo $resultls
+
