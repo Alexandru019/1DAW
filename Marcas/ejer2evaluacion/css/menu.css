@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div#contenedor{
+    border: 1px solid black;
+    width: 1300px;
+    margin: 0 auto;
+}
+div#banner{
+    border: 1px solid black;
+}
+div#menu{
+    border: 1px solid black;
+}
+div#contenido{
+    border: 1px solid black;
+}
+
+ul.menup{
+    border: 1px solid black;
+    height: 60px;
+}
+ul.menup > li{
+    width: 259.2px;height: 60px;
+    list-style-type: none;
+    float: left;
+    background-color:red ;
+}
+
+ul.menup>li:hover{
+    background-color: brown;
+}
+
+ul.submenu > li,li a{
+    border: 1px solid red;
+    display: block;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    padding-top: 17px;
+}
+ul.menup li ul.submenu {
+    display: none;
+}
+ul.menup li:hover ul.submenu{
+    display: block;
+}
+ul.submenu li{
+    list-style-type: none;
+    width: 259.2px;
+    background-color: red;
+}
+
+ul.submenu>li:hover{
+    background-color: black;
+}
+ul.submenu{
+    position: absolute;
+
+}

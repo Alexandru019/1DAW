@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio formatear tabla</title>
+<style>
+    *{
+    margin: 0px;padding: 0px;
+    }
+    table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid black;
+    }
+    tr#fila1 th {
+        background-color: grey;
+    }
+    tr.amarillo{
+        background-color: yellow ;
+    }
+    th.Euro{
+        background-color: aqua;
+        background-image: url("imagenes/euro.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left:20px ;
+    }
+    th.Dolar{
+        background-color: aqua;
+        background-image: url("imagenes/dolar.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left:20px ;
+    }
+    th.Libra{
+        background-color: aqua;
+        background-image: url("imagenes/libra.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left:20px ;
+    }
+    th.Yen{
+        background-color: aqua;
+        background-image: url("imagenes/yen.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left:20px ;
+    }
+    tr:hover th,tr:hover td{
+        color:red;
+    }
+</style>
+</head>
+
+<body>
+
+    <table border="1" summary="Tipos de cambio" >
+        <tr id="fila1">
+            <th scope="col">Cambio</th>
+            <th scope="col">Compra</th>
+            <th scope="col">Venta</th>
+            <th scope="col">M&aacute;ximo</th>
+            <th scope="col">M&iacute;nimo</th>
+        </tr>
+        <tr class="amarillo">
+            <th scope="row" class="Euro">Euro/Dolar</th>
+            <td>1.2524</td>
+            <td>1.2527</td>
+            <td>1.2539</td>
+            <td>1.2488</td>
+        </tr>
+        <tr>
+            <th scope="row" class="Dolar" >Dolar/Yen</th>
+            <td>119.01</td>
+            <td>119.05</td>
+            <td>119.82</td>
+            <td>119.82</td>
+        </tr>
+        <tr class="amarillo">
+            <th scope="row" class="Libra" >Libra/Dolar</th>
+            <td>1.8606</td>
+            <td>1.8611</td>
+            <td>1.8651</td>
+            <td>1.8522</td>
+        </tr>
+        <tr>
+            <th scope="row" class="Yen">Euro/Yen</th>
+            <td>149.09</td>
+            <td>149.13</td>
+            <td>149.79</td>
+            <td>148.96</td>
+        </tr>
+    </table>
+
+</body>
+</html>

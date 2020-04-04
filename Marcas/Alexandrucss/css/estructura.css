@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Las reglas anteriores no se pueden quitar, al finalizar el examen y siempre que quieras puedes
+quitar los bordes a los elementos para ver el examen finalizado sin bordes. Tus reglas deben continuar
+debajo de estos comentarios y estructurados en cada hoja CSS que os he dejado vacia. */
+
+/* En esta hoja deben de estar las reglas CSS que correspondan a la estructura global de la web, 
+tamaños de cajas principales, alineamientos, flotamientos, etc...*/
+
+/* Tambíen hay que hacer en esta hoja CSS lo que corresponda al PIE, son muy pocas líneas de código y lo 
+revisaré desde aquí */
+body{
+    background-color: antiquewhite;
+}
+div#contenedor {
+    width: 1024px;
+    margin: 0 auto;
+}
+/*Empieza el css de la cabecera*/
+div#cabecera {
+    height: 300px;
+    position: relative;
+    background: url("../img/fondocabecera.jpg") no-repeat;
+}
+div#cabecera span#parte1cabecera{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    color: white;
+    text-align: center;
+}
+div#cabecera span#parte2cabecera{
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    color: white;
+    text-align: center;
+}
+/*Empieza el css del pie*/
+div#pie{
+    background-color: white;
+    position: relative;
+    height: 100px;
+}
+div#pie img {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+div#pie p {
+    margin: 0 auto;
+    position: absolute;
+    color: blue;
+    top: 45px;
+    left: 175px;
+    font-size: 23px;
+}
+/*Estructura contenido*/
+div#contenido{
+    position: relative;   
+    height: 250px;
+    background-color: white;
+}
+div#contenido div{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+div#formulario {
+    margin-top: 10px;
+    position: absolute;
+    width: 200px;
+    left: 0px;
+}
+div#tabla {
+    position: absolute;
+    width: 600px;
+    margin-right: 5px;
+    left: 205px;
+    margin-top: 10px;
+}
+div#listas {
+    left: 815px;
+    position: absolute;
+    width: 150px;
+    margin-top: 10px;
+}

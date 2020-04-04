@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+        Formularios
+        
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+    <body>
+        <h1 align="center">Formulario 2</h1>
+        <table align="center">
+            <form action="enviarcorreo.php" method="POST">
+            <tr>
+                <td><p>Nombre:</p>    
+                <p><input type="text" name="nombre"  placeholder="Introduce un nombre"/></p>
+                </td>
+                <td></td>
+                <td>
+                    <p>Apellidos: <input type="text" name="apellido"  placeholder="Introduce un apellido"/></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>Password:</p>
+                    <p><input type="password" name="password"  placeholder="Introduce tu contraseña"/></p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+                    Que sistema operativo conoces:
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><p>Windows<input type="checkbox" name="cursoDAW" value="Windows"/></p></td>
+                <td align="center"><p>Macintosh</p><p><input type="checkbox" name="cursoSMR" value="Macintosh"/></p></td>
+                <td><p>UNIX<input type="checkbox" name="cursoGA" value="UNIX"/></p></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">Has utilizado alguna vez el sistema operativo LINUX.</td>
+            </tr>
+            <tr>
+                <td align="right"> <p>
+                    SI
+                        <input type="radio" name="SINO" value="SI"/> 
+                </p>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <p>
+                    NO 
+                    <input type="radio" name="SINO" value="NO"/>
+                                    
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr align="center">
+                <td><input type="submit" name="enviar" value="Enviar"/></td>
+                <td></td>
+                <td><input type="reset" name="reset" value="Limpiar"/></td>
+            </tr>
+            <tr></tr>
+        </form>
+        </table>
+        <br/><br/><br/><br/><br/>
+        <p><a href="index_formularios.html">Vuelve al inicio</a></p>
+        
+      
+
+    </body>
+
+
+</html>

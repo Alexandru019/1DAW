@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+        Formularios
+        
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+    <body>
+        <h1>Formulario de Ejemplo</h1>
+        <form action="enviarcorreo.php" method="POST">
+            <p>Nombre:    <input type="text" name="nombre"  placeholder="Introduce un nombre"/></p>
+            <p>Apellidos: <input type="text" name="apellido"  placeholder="Introduce un apellido"/></p>
+            <p>Mail:      <input type="email" name="email"  placeholder="nombreejemplo@dominio.com"/></p>
+            <p>Password:  <input type="password" name="password"  placeholder="Introduce tu contraseña"/></p>
+            <p><input type="hidden" name="salario" size="50px"/></p>
+            <p>Acepta las condiciones y terminos de privacidad<input type="checkbox" name="checkbox" value="acepto" ></p>
+            <p>Marca los cursos interesados:</p>
+            <p><input type="checkbox" name="cursoDAW" value="DAW"/>DAW</p>
+            <p><input type="checkbox" name="cursoSMR" value="SMR"/>SMR</p>
+            <p><input type="checkbox" name="cursoGA" value="GA"/>GA</p>
+            <p><input type="checkbox" name="cursoFPB" value="FPB"/>FPB</p>
+            <br/><br/>
+            <p>Provincia
+                <select name="provincia">
+                    <option selected value="Nada">...</option>
+                    <option value="Castellon">Castellón</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Alicante">Alicante</option>
+                </select>
+            </p>
+            <p>
+                Sexo: 
+                    <input type="radio" name="sexo" value="Hombre"/> Hombre
+                    <input type="radio" name="sexo" value="Mujer"/> Mujer
+            </p>
+            <p>
+                Jubilado:
+                    <input type="radio" name="jubilado" value="Si"/> Sí 
+                    <input type="radio" name="jubilado" value="No"/> No
+            </p>
+            <p>
+                Mensaje: <textarea name="mensaje"></textarea>
+            </p>
+            <p>
+            <input type="submit" name="enviar" value="Enviar"/>
+            <input type="reset" name="reset" value="Limpiar"/>
+            <input type="image" name="ok" src="../Frames/img/guarda.jpg"  value="Ok">
+            </p>
+
+
+        </form>
+      
+
+    </body>
+
+
+</html>

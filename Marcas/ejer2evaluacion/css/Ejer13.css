@@ -1,0 +1,86 @@
+*{
+    margin:0px;padding:0px;
+    font-style: Verdana;
+    color:#192666;
+    background-color: #F2F5FE;
+    list-style: none;
+    
+}
+body{
+    background-image: url(../imagenes/fondo.gif);
+    background-repeat: no-repeat;
+}
+
+div#contenedor{
+    width: 770px;
+    margin: 0 auto;
+}
+
+div#principal{
+    width: 530px;
+}
+
+div#secundario{
+    width: 200px;
+}
+
+div#principal{
+    float: left;
+}
+
+div#secundario{
+    float: right;
+}
+
+div#cabecera{
+    height: 100px;
+}
+
+div#cabecera *,div#cabecera{
+    background-image: url("../imagenes/cabecera.jpg");
+    repeat:no-repeat;
+}
+
+h1#logo{
+    float: left;
+}
+
+div#buscador{
+    float: right;
+}
+
+div.clear{
+    clear: both;
+}
+
+div#menu ul{
+    width: 770px;
+    border:1px solid red;
+    background-color: #253575;
+    height: 30px;
+}
+
+div#menu ul li a{
+    border: 1px solid black;
+    display: block;
+    padding: 5px ;
+    height: 15px;
+    background-color: #31479B;
+    color:white;
+}
+
+div#menu *{
+    text-decoration: none;
+    float: left;
+    list-style: none;
+}
+
+div#menu li:hover a{
+    background-color: white;
+    color:red;
+}
+
+div#sobremi *,div#sobremi{
+    background-image: url("../imagenes/cabecera.jpg");
+    repeat:no-repeat;
+}

@@ -1,0 +1,76 @@
+/* Solo reglas CSS que afecten al menu */
+
+/* Al comenzar el examen mi recomendación es ocultar el menú con un display:none; y terminar
+el resto de ejercicios, cuando comencemos con el menu quitamos el display */
+* {
+
+    list-style-type: none;
+    text-decoration: none;
+}
+ul#menup {
+    width: 1024px;
+    list-style-type: none;
+    height: 100px;
+    background-color: #222646;
+    position: relative;    
+}
+ul#menup > li {
+    float: left;   
+    width: 146px;
+}
+ul#menup > li > a {
+    display: block;
+    color: white;
+    background-color:#222646;
+    text-align: center;
+    height: 100px;
+    font-size: 18px;
+    padding-top: 38px;
+}
+ul#menup > li > a:hover {
+    color: red;
+}
+
+ul#menup > li:hover ul,div.submenu>ul>li>a {
+    display: block;
+    background-color:#222646;
+
+}
+
+div.submenu>ul {
+    display:none;
+    height: 146px;
+    width: 146px;
+    position: absolute;
+    bottom:100px; 
+    z-index: 10; 
+}
+ul#menup > li:hover > ul {
+    display: block;
+}
+div.submenu>ul>li{
+    height: 48px;
+}
+div.submenu>ul>li>a{
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+div.submenu>ul>li>a:hover{
+    color: red;
+    background-color: white;
+}
+div.submenu+div *{
+    display: none;
+    height: 146px;
+    width: 146px;
+    position: absolute;
+    top:100px; 
+    z-index: 10; 
+}
+ul#menup > li:hover > div.submenu+div * {
+    display: block;
+}

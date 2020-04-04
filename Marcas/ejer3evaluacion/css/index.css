@@ -1,0 +1,40 @@
+*{
+    margin: 0px;padding: 0px;
+}
+
+p::first-letter{
+
+}
+
+p::first-line{
+
+}
+
+p::before{
+
+}
+
+p::after{
+
+}
+
+p::selection{
+
+}
+
+a[href^="https"]{
+    color:red;
+}
+
+a[href$=".pdf"]{
+    color: green;
+    background-image: url("../imagenes/pdf.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-y: center;
+    padding: 15px;
+}
+
+a[href*="gmail"]{
+    color: aqua;
+}

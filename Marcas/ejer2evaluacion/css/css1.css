@@ -1,0 +1,82 @@
+.uno{
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+}
+.dos{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 105px;
+    top: -57px; 
+    margin: 5px;
+}
+.tres{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 210px;
+    top: -114px;
+    margin: 5px; 
+}
+.cuatro{
+    position: relative;
+    width: 315px;
+    height: 50px;
+    top: -100px;
+    margin: 5px;
+}
+div div,div{
+    border: 1px solid black;
+}
+/*Empieza el ejemplo absoluto*/
+div#absoluto{
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+div#absoluto div{
+    position: absolute;
+}
+div#absoluto .u{
+
+}
+div#absoluto .d{
+
+}
+div#absoluto .t{
+
+}
+div#absoluto .c{
+
+}
+/*Empieza el ejemplo lunes*/
+div#lunes{
+    width: 400px; height: 400px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+div#lunes div{
+    width: 50px; height: 50px;
+    border: 1px solid black;
+    position: absolute;
+}
+div#lunes{
+    position: relative;
+}
+.a {
+    right: 0px;
+    bottom: 0px;
+}
+.s {
+    right: 0px;
+    top: 0px;
+}
+.e {
+    left: 0px;
+    bottom: 0px;
+}
+.p {
+    top: 0px;
+    left: 0px;
+}

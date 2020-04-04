@@ -1,0 +1,27 @@
+table {
+    color:orange;
+}
+p.principal strong>a + a{
+    color: pink;
+}
+td p{
+    color: blue;
+}
+li {
+    color: aqua;
+}
+li a {  //solo afecta a los a dentro de li
+    color: blueviolet;
+}
+h1.cabecera {
+    color: aqua;
+}
+#cabecera > * > a{ // solo afecta a los a nietos de cabecera
+    color: blue;
+}
+#cabecera > a{   //solo afecta a los a hijos de cabecera
+    color: 
+}
+p + p{
+    color: brown;
+}

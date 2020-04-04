@@ -1,0 +1,22 @@
+/* Solo reglas CSS que afecten al formulario */
+div#formulario *{
+    color: blue;
+}
+div#formulario>h2{
+    font-weight: normal;
+}
+#nombre,#telefono,#mail,div#formulario>h2{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+#enviar{
+    position: relative;
+    left: 25px;
+}
+#nombre:hover,#telefono:hover,#mail:hover{
+    background-color: grey;
+}
+#nombre:focus,#telefono:focus,#mail:focus{
+    border-color: orangered;
+    
+}

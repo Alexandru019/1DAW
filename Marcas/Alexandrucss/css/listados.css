@@ -1,0 +1,23 @@
+/* Solo reglas CSS que afecten al listado */
+div#listas *{
+    color: blue;
+}
+div#listas ul li{
+    background-image: url("../img/flecha.gif");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:30px ;
+    font-size: 18px;
+    padding-top: 2px;
+}
+div#listas ul li:hover{
+    background-image: url("../img/flecha.gif");
+    background-repeat: no-repeat;
+    background-position: right center;
+    color:red;
+    font-weight: bold;
+}
+div#listas p{
+    text-decoration: underline;
+    padding-bottom: 5px;
+}

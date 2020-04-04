@@ -1,0 +1,15 @@
+h1#titulo {    color: green;}
+p strong {    color: red;}
+p > span.destacado {    color: yellow;}
+h2#subtitulo{    color: blue}
+h2 + p a {    color: red;}
+h2 + p a em {    color:blue;}
+p span.especial {    color: blueviolet;}
+table caption{    color:blue  ;}
+table th {    color: red;}
+table .especial{    color: yellow;}
+table td{    color: rgb(49, 197, 49);}
+table tbody td strong{    color: yellow;}
+div#adicional {    color: greenyellow;}
+div#adicional span#especial{    color: blueviolet;}
+div#adicional a{    color: rgb(27, 185, 27);}

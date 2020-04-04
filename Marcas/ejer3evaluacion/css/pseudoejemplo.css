@@ -1,0 +1,50 @@
+*:not(ul){
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+}
+div#pares p:nth-child(2n){
+   background-color: red;
+}
+
+div#impares p:nth-child(odd){
+    background-color: green;
+}
+
+div#quinto p:nth-child(5){
+    background-color: yellow;
+}
+
+div#raro p:nth-child(3n+1){
+    background-color: yellow;
+}
+
+table tr:nth-child(2n){
+    background-color: skyblue;
+}
+
+
+p.limpiar li:only-child{
+    color: palevioletred;
+}
+
+ul li:only-child{
+    color:purple;
+}
+
+strong:only-of-type {
+    color: green;
+}
+
+label input:enabled+span{
+    color: #2b2;
+}
+label input:disabled+span{
+    color: grey;
+}
+fieldset{
+    width: 500px;
+}

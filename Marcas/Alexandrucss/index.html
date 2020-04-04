@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Examen CSS</title>
+
+	<link rel="stylesheet" type="text/css" href="css/estructura.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/formulario.css" />
+	<link rel="stylesheet" type="text/css" href="css/tabla.css" />
+	<link rel="stylesheet" type="text/css" href="css/listados.css" />
+
+
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="cabecera">
+			<span id="parte1cabecera">
+				<h1>Lenguaje de Marcas</h1>
+				<h2>Desarrollo de Aplicaciones WEB</h2>
+			</span>
+
+			<span id="parte2cabecera">
+				<h1>SOLVAM</h1>
+				<h2>Centro de F.P. SOLVAM</h2>
+			</span>
+		</div>
+		<div id="menu">
+			<ul id="menup">
+				<li><a href="http://www.solvam.es">Inicio</a></li>
+				<li class="leon"><a href="http://www.solvam.es/leon">León</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="http://www.solvam.es/leon/a">Pais Origen</a></li>
+							<li><a href="http://www.solvam.es/leon/b">Fotos</a></li>
+							<li><a href="http://www.solvam.es/leon/c">Datos Generales</a></li>
+						</ul>
+					</div>
+					<div>
+						<img src="img/leon.png"/>
+					</div>
+				</li>
+				<li class="panda"  ><a href="http://www.solvam.es/panda">Panda</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="http://www.solvam.es/panda/a">Pais Origen</a></li>
+							<li><a href="http://www.solvam.es/panda/b">Fotos</a></li>
+							<li><a href="http://www.solvam.es/panda/c">Datos Generales</a></li>
+						</ul>
+					</div>
+					<div>
+						<img src="img/panda.png"/>
+					</div>
+				</li>
+				<li class="perro"><a href="http://www.solvam.es/perro">Perro</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="http://www.solvam.es/perro/a">Pais Origen</a></li>
+							<li><a href="http://www.solvam.es/perro/b">Fotos</a></li>
+							<li><a href="http://www.solvam.es/perro/c">Datos Generales</a></li>
+						</ul>
+					</div>
+					<div>
+						<img src="img/perro.png"/>
+					</div>
+				</li>
+				<li  class="rata"><a href="http://www.solvam.es/rata">Rata</a>
+					<div  class="submenu">
+						<ul>
+							<li><a href="http://www.solvam.es/rata/a">Pais Origen</a></li>
+							<li><a href="http://www.solvam.es/rata/b">Fotos</a></li>
+							<li><a href="http://www.solvam.es/rata/c">Datos Generales</a></li>
+						</ul>
+					</div>
+					<div>
+						<img src="img/ratas.png"/>
+					</div>
+				</li>
+				<li class="zorro"><a  href="http://www.solvam.es/zorro">Zorro</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="http://www.solvam.es/zorro/a">Pais Origen</a></li>
+							<li><a href="http://www.solvam.es/zorro/b">Fotos</a></li>
+							<li><a href="http://www.solvam.es/zorro/c">Datos Generales</a></li>
+						</ul>
+					</div>
+					<div>
+						<img src="img/zorro.png"/>
+					</div>
+				</li>
+				<li><a href="http://www.solvam.net">Contacto</a></li>
+			</ul>
+		</div>
+
+		<div id="contenido">
+			<div id="formulario">
+				<h2>Alta socios:</h2>
+				<form method="post" action="#">
+					<label for="nombre">Nombre y Apellidos</label>
+					<input id="nombre" name="nombre" value="" />
+					<label for="telefono">Teléfono</label>
+					<input id="telefono" name="telefono" value="" />
+					<br/>
+					<label for="mail">E-Mail</label>
+					<input id="mail" name="mail" value="" />
+					<input id="enviar" type="submit" value="Enviar" />
+				</form>
+			</div>
+			<div id="tabla">
+				<h2>Notas Segunda Evaluación</h2><br />
+				<table>
+					<tr>
+						<th>Notas</th>
+						<th>Mariluz</th>
+						<th>Isabel</th>
+						<th>Lola</th>
+						<th>Jacobo</th>
+					</tr>
+					<tr>
+						<td class="asignaturas">Programación</td>
+						<td>4.67</td>
+						<td>8.89</td>
+						<td>3.90</td>
+						<td>5.65</td>
+					</tr>
+					<tr>
+						<td class="asignaturas">Marcas</td>
+						<td>8.00</td>
+						<td>9.05</td>
+						<td>7.34</td>
+						<td>3.82</td>
+					</tr>
+					<tr>
+						<td class="asignaturas">BB.DD.</td>
+						<td>6.06</td>
+						<td>9.61</td>
+						<td>7.88</td>
+						<td>4.85</td>
+					</tr>
+					<tr>
+						<td class="asignaturas">Sistemas</td>
+						<td>4.99</td>
+						<td>9.13</td>
+						<td>1.79</td>
+						<td>8.03</td>
+					</tr>
+				</table>
+			</div>
+			<div id="listas">
+				<p>Profesores DAW</p>
+					<ul>
+						<li>Lorenzo</li>
+						<li>Isabel</li>
+						<li>Mariluz</li>
+					</ul>
+				
+					<p>Profesores SMR</p>
+						<ul>
+							<li>Lola</li>
+							<li>Maria Jose</li>
+							<li>Lola</li>
+						</ul>
+			</div>
+			<div class="limpiar"></div>
+		</div>
+
+		<div class="limpiar"></div>
+		<div id="pie">
+			<img src="img/solvam.jpg" />
+			<p>Examen Segunda Evaluación - Lenguaje de Marcas - Lorenzo Sánchez</p>
+			<div class="limpiar"></div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/* Solo reglas CSS que afecten a la tabla */
+div#tabla th,div#tabla td,div#tabla h2{
+    text-align: center;
+    color: blue;
+}
+div#tabla h2{
+    font-weight: normal;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 575px;
+    height: 170px;
+    border-spacing: 10px 5px;
+}
+table td,table th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table tr td.asignaturas{
+    font-weight: bolder;
+}
+div#tabla tr:hover td,div#tabla tr:hover th{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+
+}
