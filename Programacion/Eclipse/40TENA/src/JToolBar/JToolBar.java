@@ -54,6 +54,7 @@ public class JToolBar extends JFrame {
 		textArea.setLineWrap(true);
 		
 		JButton cortar = new JButton(new ImageIcon("src/JToolBar/Imagenes/tijeras.png"));
+		cortar.setToolTipText("Cortar");
 		cortar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Frase=textArea.getSelectedText();
@@ -63,6 +64,7 @@ public class JToolBar extends JFrame {
 		toolBar.add(cortar);
 		
 		JButton pegar = new JButton(new ImageIcon("src/JToolBar/Imagenes/pegar.png"));
+		pegar.setToolTipText("Pegar");
 		pegar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textArea.replaceSelection(Frase);
@@ -71,6 +73,7 @@ public class JToolBar extends JFrame {
 		toolBar.add(pegar);
 		
 		JButton copiar = new JButton(new ImageIcon("src\\JToolBar\\Imagenes\\copy.png"));
+		copiar.setToolTipText("Copiar");
 		copiar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Frase=textArea.getSelectedText();

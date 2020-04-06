@@ -49,8 +49,10 @@ public class Ventana extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JDialog Emergente  = new JDialog();
-				Emergente.setVisible(true);
 				Emergente.setLocation(200, 75);
+				Emergente.setModal(true);
+				Emergente.setVisible(true);
+				
 			}
 		});
 		btnNewButton.setBounds(118, 172, 182, 35);

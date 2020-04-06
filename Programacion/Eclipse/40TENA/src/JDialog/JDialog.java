@@ -3,6 +3,7 @@ package JDialog;
 import java.awt.BorderLayout;
 import java.awt.Dialog;
 import java.awt.FlowLayout;
+import java.awt.Window;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -13,15 +14,14 @@ import javax.swing.JLabel;
 
 public class JDialog extends javax.swing.JDialog {
 
+	private static JDialog dialog;
 	private final JPanel contentPanel = new JPanel();
-	private JDialog dialog;
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		try {
-			JDialog dialog = new JDialog();
-			dialog.setDefaultCloseOperation(1);
+			dialog=new JDialog();
 			dialog.setVisible(true);
 			dialog.setLocation(200, 75);
 		} catch (Exception e) {
@@ -50,8 +50,6 @@ public class JDialog extends javax.swing.JDialog {
 				JButton okButton = new JButton("OK");
 				okButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent arg0) {
-					
-						dialog.setVisible(false);
 						dialog.dispose();
 					}
 				});
