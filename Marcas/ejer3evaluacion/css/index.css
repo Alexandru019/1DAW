@@ -1,6 +1,18 @@
-*{
+*:not(ul){
     margin: 0px;padding: 0px;
 }
+
+div#contenedor{
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+div#contenedor h2{
+    text-align: center;
+}
+
 
 p::first-letter{
 

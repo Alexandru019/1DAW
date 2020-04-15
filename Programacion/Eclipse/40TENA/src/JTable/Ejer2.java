@@ -97,8 +97,7 @@ public class Ejer2 {
 		frame.getContentPane().add(tf4);
 		tf4.setColumns(10);
 	
-		modelotabla=new DefaultTableModel();
-		tabla=new JTable(modelotabla);
+		tabla=new JTable();
 		tabla.setModel(new DefaultTableModel(
 				new Object [][] {},
 				new String [] {"WQE","SDM","PWD","MQRE"	}
@@ -111,7 +110,6 @@ public class Ejer2 {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Object [] fila = new Object[4]; 
-		        
 				 fila[0] =tf1.getText();
 				 fila[1] =tf2.getText();
 				 fila[2] =tf3.getText();
