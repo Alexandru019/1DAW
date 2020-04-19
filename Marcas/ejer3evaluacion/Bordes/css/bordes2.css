@@ -1,0 +1,8 @@
+
+div#estilizado{
+    margin: 0 auto;
+    width: 435px;
+    border-radius: 10px;
+    background-color: rgba(79, 80, 79,0.3);
+    padding: 10px;
+}

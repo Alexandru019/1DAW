@@ -1,35 +1,43 @@
 <html>
     <head>
         <title>Colores RGBA</title>
-        <link rel="stylesheet" type="text/css" href="css/colores.css" />
+        <link rel="stylesheet" type="text/css" href="" />
         <style>
-            #contenedor{
-                margin: 0 auto;
-                height: 200px;width: 200px;
-                background-color: red;
-                z-index: 3;
+            *{
+                margin:0px;padding: 0px;
+            }
+            #texto, #capa1 {
                 position: relative;
             }
-            #texto{
-                
-                
+            #contenedor{
+                position:absolute;
+                margin: 0 auto;
+                height: 400px;width: 400px;
+                background-color: rgba(0, 0, 255, 0.3);
+                z-index: 10;
+                left:450px;
             }
             #capa1{
-                height: 100px;width: 100px;
-                background-color: blue;
-                position: absolute;
-                left:150px
+                height: 200px;width: 300px;
+                background-color: rgba(53, 53, 56, 0.6);
                 z-index: 5;
+                left: 600px;top:150px;
+            }
+            #texto{
+                font-size: 18px;
+                padding-top: 91px;
+                padding-left: 50px;
             }
             
         </style>
     </head>
     <body>
         <div id="contenedor">
-            <div id="capa1">
-                <div id="texto">
-                    Esta capa es transparente
-                </div>
+            
+        </div>
+        <div id="capa1">
+            <div id="texto">
+                Esta capa es transparente
             </div>
         </div>
     </body>
