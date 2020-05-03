@@ -6,3 +6,7 @@ div#estilizado{
     background-color: rgba(79, 80, 79,0.3);
     padding: 10px;
 }
+span.small{
+    font-size: small;
+    color: rgba(79, 80, 79,0.8);
+}

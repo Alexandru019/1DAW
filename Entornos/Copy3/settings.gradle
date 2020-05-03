@@ -1,0 +1,2 @@
+rootProject.name='Copy3'
+include ':app'

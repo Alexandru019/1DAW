@@ -1,0 +1,49 @@
+*{
+    margin: 0;padding: 0;
+}
+div{
+    width: 350px;
+    float: left;
+    margin: 10px;
+}
+div p{
+    margin: 5px;
+}
+#imagen1{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url("imagenes/border3.png") 33% repeat repeat;
+}
+
+#imagen2{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url("imagenes/border3.png") 33% stretch stretch;
+}
+
+#imagen3{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url("imagenes/borde1.gif") 10 10 10 10 stretch stretch;
+}
+
+#imagen4{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(imagenes/borde2.gif) 10 10 10 10 stretch stretch;
+}
+
+#imagen5{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(imagenes/borde2.gif) 10 10 10 10 repeat repeat;
+}
+
+#imagen6{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url("imagenes/border3.png") 33% repeat stretch;
+}
+
+
+

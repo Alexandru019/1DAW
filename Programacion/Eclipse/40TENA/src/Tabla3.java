@@ -1,4 +1,4 @@
-package JTable;
+
 
 import java.awt.EventQueue;
 
@@ -16,7 +16,7 @@ import java.awt.event.ActionListener;
 import java.util.GregorianCalendar;
 import java.awt.event.ActionEvent;
 
-public class Ejer3 {
+public class Tabla3 {
 	
 	private JFrame frame;
 	private JTable tabla;
@@ -37,7 +37,7 @@ public class Ejer3 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Ejer3 window = new Ejer3();
+					Tabla3 window = new Tabla3();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -49,7 +49,7 @@ public class Ejer3 {
 	/**
 	 * Create the application.
 	 */
-	public Ejer3() {
+	public Tabla3() {
 		initialize();
 	}
 
