@@ -1,4 +1,9 @@
 div{
-    width: 400px;height: 400px;
-    border: 1px solid black;
+    margin-top: 50px;margin-left: 50px;
+    padding-top: 20px;padding-left: 20px;
+    width: 180px;height: 180px;
+    border: 20px solid blue;
+    border-radius: 150px 0px 150px 0px;
+    background-color:rgb(255, 193, 78);
+    box-shadow:inset 25px 25px 5px 41px rgba(0,0,0,0.35) , 137px 137px 74px 41px rgba(0,0,0,0.75);;
 }

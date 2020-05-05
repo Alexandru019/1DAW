@@ -24,7 +24,7 @@ div:nth-of-type(2){
     background-image: url(../Border-Imagen/imagenes/perro.png);
     background-color: rgb(53, 54, 53);
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: right bottom;
     background-origin: padding-box;
 } 
 div:nth-of-type(3){
@@ -52,6 +52,8 @@ div:nth-last-child(1){
     color: black;
     padding: 0px;
     border: unset;
-    background-image: url(../Border-Imagen/imagenes/lupa.png),url(../Border-Imagen/imagenes/perro.png),url(../Border-Imagen/imagenes/zorro.png);
+    background-image: url(../Border-Imagen/imagenes/lupa.png),url(../Border-Imagen/imagenes/perro.png),url(../Border-Imagen/imagenes/panda.png),url(../Border-Imagen/imagenes/zorro.png);
     background-clip: content-box;
+    background-repeat: repeat,no-repeat,no-repeat,repeat;
+    background-position: center,right bottom,center,center;
 } 

@@ -1,0 +1,36 @@
+*{
+    margin: 0px;padding: 0px;
+}
+div{
+    width: 200px;
+    float: left;
+    margin: 50px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    background-color: rgba(99, 99, 99,0.4);
+}
+div p{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+p{
+    clear: both;
+}
+#recuadro1{
+    box-shadow:  -35px -35px 13px rgba(255,0,0,1),35px 35px 13px rgba(0,255,0,1);
+}
+#recuadro2{
+    box-shadow: inset 1px 1px 6px 2px rgba(255,0,0,0.75), 0px 0px 30px 2px rgba(232,232,25,1);
+}
+#recuadro3{
+    box-shadow:25px 25px 20px 0px rgba(255,0,0,1);
+}
+#titulo1{
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+#titulo2{
+    text-shadow: -4px -4px 2px rgba(150, 150, 150, 1);
+}
+#titulo3{
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 1),2px 2px 2px rgba(0, 255, 0, 1),3px 3px 2px rgba(0, 0, 255, 1);
+}
