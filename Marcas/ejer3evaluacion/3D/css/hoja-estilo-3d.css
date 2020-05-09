@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#contenedor-cubo {
+    width: 200px; height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 300px;
+    perspective: 600px;
+}
+
+div.cubo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s linear 0s;
+}
+
+div.cubo:hover {
+    transform: rotatey(1800deg) rotateX(600deg) rotateZ(200deg) translateX(25px) translateY(50px) translateZ(80px);
+    transition: all 10s linear 0s;
+}
+
+div.cubo div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    font-size: 150px;
+    text-align: center;
+    position: absolute;
+}
+
+div.cubo div:nth-child(1) {
+    background-color: rgba(255,0,0,1);
+    transform: translateZ(100px);
+
+}
+
+div.cubo div:nth-child(2) {
+    background-color: rgba(255,255,0,1);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+div.cubo div:nth-child(3) {
+    background-color: rgba(255,0,255,1);
+    transform: rotateY(-90deg) translateZ(100px);
+
+}
+
+div.cubo div:nth-child(4) {
+    background-color: rgba(0,120,0,1);
+    transform: rotatey(180deg) translateZ(100px);
+
+}
+
+div.cubo div:nth-child(5) {
+    background-color: rgba(0,255,0,1);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+div.cubo div:nth-child(6) {
+    background-color: rgba(0,0,255,1);
+    transform: rotateX(-90deg) translateZ(100px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#contenedor {
+    border: 5px solid black;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    perspective: 500px;
+}
+
+div.carta {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 2s linear 0s;
+}
+
+div.carta:hover {
+    transform: rotatex(180deg);
+    transition: all 2s linear 0s;
+}
+
+div.delante {
+    background-color: brown;
+    font-size: 200px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+div.detras {
+    background-color: blue;
+    font-size: 200px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotatex(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0px;padding: 0px;
+}
+div#contenedor-prisma{
+    width: 800px; height: 400px;
+    margin: 0 auto;
+    perspective: 700px;
+}
+
+div.prisma{
+    width: 100%;height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 7s linear 0s;
+}
+
+div.prisma:hover{
+    transform: rotatex(-360deg);
+    transition: all 7s linear 0s;
+}
+
+div.prisma div{
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+    text-align: center;
+    position: absolute;
+}
+
+div.prisma div:nth-child(1){
+    background-image: url(../../Border-Imagen/imagenes/1.jpg);
+    transform: translateZ(200px);
+
+}
+div.prisma div:nth-child(2){
+    background-image: url(../../Border-Imagen/imagenes/2.jpg);
+    transform: rotatex(90deg)translateZ(200px);
+}
+div.prisma div:nth-child(3){
+    background-image: url(../../Border-Imagen/imagenes/3.jpg);
+    transform: rotatex(-90deg)translateZ(200px);
+}
+div.prisma div:nth-child(4){
+    background-image: url(../../Border-Imagen/imagenes/4.jpg);
+    transform: rotatex(180deg)translateZ(200px);
+}
+div.prisma div:nth-child(5){
+    background-color: rgba(255,22,255,0.4);
+    transform: rotatey(-90deg)translateZ(200px);
+    width: 400px;height: 400px;
+}
+div.prisma div:nth-child(6){
+    background-color: rgba(74, 180, 79,0.4);
+    transform: rotatey(90deg)translateZ(600px);
+    width: 400px;height: 400px;
+}

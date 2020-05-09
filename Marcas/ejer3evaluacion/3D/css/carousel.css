@@ -1,0 +1,67 @@
+*{
+    margin: 0px;padding: 0px;
+}
+div.container{
+    width: 200px; height: 100px;
+    margin: 0 auto;
+    perspective: 1500px;
+}
+
+div#carousel{
+    width: 100%;height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 7s linear 0s;
+}
+
+div#carousel:hover{
+    transform: rotatey(360deg);
+    transition: all 7s linear 0s;
+}
+
+div#carousel div{
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+div#carousel div:nth-child(1){
+    transform: translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/b.jpg);
+}
+div#carousel div:nth-child(2){
+    transform: rotatey(40deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/b2.jpg);
+}
+div#carousel div:nth-child(3){
+    transform: rotatey(80deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/1.jpg);
+}
+div#carousel div:nth-child(4){
+    transform: rotatey(120deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/2.jpg);
+}
+div#carousel div:nth-child(5){
+    transform: rotatey(160deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/3.jpg);
+}
+div#carousel div:nth-child(6){
+    transform: rotatey(200deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/4.jpg);
+}
+div#carousel div:nth-child(7){
+    transform: rotatey(240deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/der_eisendrache.jpg);
+}
+div#carousel div:nth-child(8){
+    transform: rotatey(280deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/fondos-fold-696x364.jpg);
+}
+div#carousel div:nth-child(9){
+    transform: rotatey(320deg) translateZ(300px);
+    background-image: url(../../Border-Imagen/imagenes/Actualidad_349729813_130345447_1706x960.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
