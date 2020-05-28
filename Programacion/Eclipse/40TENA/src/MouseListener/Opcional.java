@@ -156,7 +156,7 @@ public class Opcional {
 		ct.add(carta9);ct.add(carta10);ct.add(carta11);ct.add(carta12);ct.add(carta13);ct.add(carta14);ct.add(carta15);ct.add(carta16);
 		
 		for(int i=0;i<16;i++) {
-			((JButton) ct.get(i)).setIcon(new ImageIcon(Opcional.class.getResource("/Imagenes/cartas.png")));
+			((JButton) ct.get(i)).setIcon(new ImageIcon(Opcional.class.getResource("/Imagenes/carta")));
 			frame.getContentPane().add((JButton) ct.get(i));
 		}
 			

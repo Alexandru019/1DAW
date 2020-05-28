@@ -1,0 +1,10 @@
+div.tabla{
+   float: left; 
+}
+div.formulario{
+    width: 200px;
+    margin-left: 800px;
+}
+.limpiar{
+    clear: both;
+}

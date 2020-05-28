@@ -65,6 +65,7 @@ public class Ejer1 {
 		paneles=new JTabbedPane();
 		amarillo=new JPanel();naranja=new JPanel();rosa=new JPanel();rojo=new JPanel();azul=new JPanel();cian=new JPanel();verde=new JPanel();
 		paneles.add("Yellow", amarillo);
+		amarillo.setName("1");naranja.setName("");rosa.setName("3");azul.setName("4");verde.setName("5");
 		paneles.add("Orange", naranja);
 		paneles.add("Pink", rosa);
 		paneles.add("Red", rojo);
@@ -75,10 +76,16 @@ public class Ejer1 {
 		rellenaColor();
 		for(int i=0;i<7;i++) {
 			paneles.setBackgroundAt(i, colores[i]);
+			System.out.println(amarillo.getName());
 		}
 		for(int i=0;i<7;i++) {
 			paneles.getComponentAt(i).setBackground(colores[i]);
 		}
+		paneles.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent arg0) {
+				System.out.println(paneles.getSelectedComponent().getName());
+			}
+		});
 		
 	}
 

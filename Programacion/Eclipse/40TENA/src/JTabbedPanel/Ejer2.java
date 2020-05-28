@@ -63,11 +63,8 @@ public class Ejer2 {
 		return Integer.parseInt(a);
 	}
 	public int generaEdad() {
-		String a="";
-		int valor1= (int)(Math.random()*(5-2+1)+2);
-		int valor2 = (int)(Math.random()*(9-0+1)+0);
-		a=a+valor1+valor2;
-		return Integer.parseInt(a);
+		int valor1= (int)(Math.random()*(59-18+1)+18);
+		return valor1;
 	}
 	public int generaCod() {
 		String a="";
