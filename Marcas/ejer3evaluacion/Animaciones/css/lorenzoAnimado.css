@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#contenedor{
+    margin: 0 auto;
+}
+ol{
+    width: 257px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+ol li {
+    width: 257px;
+    height: 51.4px;
+}
+li div{
+    width: 257px;
+    height: 51.4px;
+}
+
+li:nth-child(1) div{
+    background-image: url("../imagenes/lorenzo.PNG");
+}
+li:nth-child(2) div{
+    background-image: url("../imagenes/lorenzo.PNG");
+    background-position: 0px 205.6px;  
+}
+li:nth-child(3) div{
+    background-image: url("../imagenes/lorenzo.PNG");
+    background-position: 0px 154.2px;  
+}
+li:nth-child(4) div{
+    background-image: url("../imagenes/lorenzo.PNG");
+    background-position: 0px 102.8px;  
+}
+li:nth-child(5) div{
+    background-image: url("../imagenes/lorenzo.PNG");
+    background-position: 0px 51.4px;  
+}
+

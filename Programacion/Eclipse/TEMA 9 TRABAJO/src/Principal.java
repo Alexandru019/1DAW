@@ -2,6 +2,7 @@
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.EventQueue;
+import java.awt.ScrollPane;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -148,11 +149,12 @@ public class Principal {
 	
 	public void cargaTabla() {
 		columnitas();
-		tabla1=new JTable();
+		for(int i=0;i<tabla1.getRowCount();i++) {
+			((DefaultTableModel) tabla1.getModel()).removeRow(0);
+		}
 		tabla1.setModel(new DefaultTableModel(new Object[][] {},nomColumnas));
-		scrollPane1=new JScrollPane(tabla1);
-		scrollPane1.setBounds(0,0,((JPanel) TodoPanel.get(paneles.getSelectedIndex())).getWidth()-200,((JPanel) TodoPanel.get(paneles.getSelectedIndex())).getHeight());
 		((JPanel) TodoPanel.get(paneles.getSelectedIndex())).add(scrollPane1);
+		scrollPane1.setVisible(true);
 		anterior.setVisible(true);
 		siguiente.setVisible(true);
 		registraDatos();
@@ -196,7 +198,8 @@ public class Principal {
 		borrar = new JButton("BORRAR");
 		editar = new JButton("EDITAR");
 		refrescar=new JButton("REFRESH");
-		
+		tabla1=new JTable();
+		scrollPane1=new JScrollPane(tabla1);
 		inicio=new JPanel();cachimba=new JPanel();tienda=new JPanel();repartidor=new JPanel();paquete=new JPanel();
 		paneles=new JTabbedPane();
 		
@@ -218,20 +221,45 @@ public class Principal {
 		repartidor.setLayout(null);
 		paquete.setLayout(null);
 		
+
+		
 		btn1 = new JButton("IR a Tienda");
+		btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				paneles.setSelectedIndex(1);
+			}
+		});
 		
 		btn1.setBounds(10, 30, 198, 23);
 		inicio.add(btn1);
 		
 		btn3 = new JButton("IR a Repartidor");
+		btn3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				paneles.setSelectedIndex(3);
+			}
+		});
 		btn3.setBounds(10, 101, 198, 23);
 		inicio.add(btn3);
 		
 		btn2 = new JButton("IR a Cachimbas");
+		btn2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				paneles.setSelectedIndex(2);
+			}
+		});
 		btn2.setBounds(10, 64, 198, 23);
 		inicio.add(btn2);
 		
 		btn4 = new JButton("IR a Paquete");
+		btn4.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				paneles.setSelectedIndex(4);
+			}
+		});
 		btn4.setBounds(10, 135, 198, 23);
 		inicio.add(btn4);
 		
@@ -305,10 +333,12 @@ public class Principal {
 				if(paneles.getSelectedIndex()==0) {
 					anterior.setVisible(false);
 					siguiente.setVisible(false);
+					scrollPane1.setVisible(false);
 					
 				}else {
 					frame.setBounds(100, 100, 714, 353);
 					JOptionPane.showMessageDialog(frame, "Refrescando Los Datos"); 
+					scrollPane1.setBounds(0,0,((JPanel) TodoPanel.get(paneles.getSelectedIndex())).getWidth()-200,((JPanel) TodoPanel.get(paneles.getSelectedIndex())).getHeight());
 					cargaTabla();
 					JOptionPane.showMessageDialog(frame, "Cargado con éxito"); 
 				}
@@ -427,7 +457,7 @@ public class Principal {
 									addEditRepartidor.main(accionador,envioCadena);
 								}else {
 									if(paneles.getSelectedIndex()==4) {
-										accionador="add";
+										accionador="editar";
 										addEditPaquete.main(accionador,envioCadena);
 									}
 								}

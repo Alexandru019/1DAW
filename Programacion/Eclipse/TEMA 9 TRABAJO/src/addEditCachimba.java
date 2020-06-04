@@ -214,6 +214,7 @@ public class addEditCachimba {
 			frame.setTitle("Añadir Cachimba");
 		}else {
 			spinner.setValue(Integer.parseInt((String) CadenaRecibida.get(0)));
+			spinner.setEnabled(false);
 			tf1.setText((String) CadenaRecibida.get(1));
 			tf2.setText((String) CadenaRecibida.get(2));
 			tf3.setText((String) CadenaRecibida.get(3));

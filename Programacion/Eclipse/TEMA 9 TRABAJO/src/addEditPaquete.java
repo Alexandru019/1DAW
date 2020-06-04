@@ -185,6 +185,7 @@ public class addEditPaquete {
 			frame.setTitle("Añadir Paquete");
 		}else {
 			spinner.setValue(Integer.parseInt((String) CadenaRecibida.get(0)));
+			spinner.setEnabled(false);
 			tf1.setText((String) CadenaRecibida.get(1));
 			tf2.setText((String) CadenaRecibida.get(2));
 			comboBox.setSelectedItem(CadenaRecibida.get(3));

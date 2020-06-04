@@ -1,0 +1,125 @@
+#ejercicio3{
+    position: relative;
+}
+#ejercicio3 p{
+    position: absolute;
+    font-size: 50px;
+    
+}
+#ejercicio3 p:nth-child(1){
+    animation-name: mover-h;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#ejercicio3 p:nth-child(2){
+    top: 0px;
+    left: 333px;
+    animation-name: mover-o;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#ejercicio3 p:nth-child(3){
+    top: 0px;
+    left: 666px;
+    animation-name: mover-l;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#ejercicio3 p:nth-child(4){
+    top: 0px;
+    right: 0px;
+    animation-name: mover-a;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover-h{
+    0%{
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+    50%{
+        top: 350px;
+        transform: rotate(360deg);
+    }
+    90%{
+        transform: rotate(360deg);
+        top: 350px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0px;
+        left:0px;
+    }
+}
+@keyframes mover-o{
+    0%{
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+    60%{
+        top: 350px;
+        transform: rotate(360deg);
+    }
+    90%{
+        transform: rotate(360deg);
+        top: 350px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+}
+@keyframes mover-l{
+    0%{
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+    70%{
+        top: 350px;
+        transform: rotate(360deg);
+    }
+    90%{
+        transform: rotate(360deg);
+        top: 350px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+}
+@keyframes mover-a{
+    0%{
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+    80%{
+        top: 350px;
+        transform: rotate(360deg);
+    }
+    90%{
+        transform: rotate(360deg);
+        top: 350px;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 0px;
+    }
+}

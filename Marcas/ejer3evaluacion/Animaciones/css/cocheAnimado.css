@@ -1,0 +1,128 @@
+*{
+    margin: 0px;padding: 0px;
+}
+#Contenedor-coche{
+    border: 1px solid;
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+}
+#coche{
+    position: relative;
+}
+#coche *{
+    position: absolute;
+}
+.rueda1{
+    width: 50px;height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    top: 0px; left: 0px;
+    animation-name: rueda1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.rueda2{
+    width: 50px;height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    top: 150px; left: 950px;
+    animation-name: rueda2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.chasis{
+    width: 200px;height: 75px;
+    background-color: red;
+    top: 125px;left: 0px;
+    animation-name: chasis;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.ventanilla{
+    width: 75px;height: 50px;
+    background-color: aqua;
+    border-radius: 15px 0px 0px 15px;
+    top: 0px;left: 925px;
+    animation-name: ventanilla;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rueda1{
+    0%{
+        top: 0px; left: 0px;
+    }
+    10%{
+        top: 118.5px; left: 425px;
+    }
+    80%{
+        top: 118.5px; left: 425px;  
+    }
+    90%{
+        top: 0px; left: 0px;
+    }
+    100%{
+        top: 0px; left: 0px;
+    }
+}
+@keyframes rueda2{
+    0%{
+        top: 150px; left: 950px;
+    }
+    10%{
+        top: 150px; left: 950px;
+    }
+    20%{
+        top: 118.5px; left: 525px;
+    }
+    60%{
+        top: 118.5px; left: 525px;
+    }
+    70%{
+        top: 150px; left: 950px;
+    }
+    100%{
+        top: 150px; left: 950px;
+    }
+}
+@keyframes chasis{
+    0%{
+        top: 125px;left: 0px;
+    }
+    20%{
+        top: 125px;left: 0px;
+    }
+    30%{
+        top:62.5px;left: 400px;
+    }
+    70%{
+        top:62.5px;left: 400px;
+    }
+    80%{
+        top: 125px;left: 0px;
+    }
+    100%{
+        top: 125px;left: 0px;
+    }
+}
+@keyframes ventanilla{
+    0%{
+        top: 0px;left: 925px;
+    }
+    30%{
+        top: 0px;left: 925px;
+    }
+    40%{
+        top:75px;left: 525px;
+    }
+    50%{
+        top:75px;left: 525px;
+    }
+    60%{
+        top: 0px;left: 925px;
+    }
+    100%{
+        top: 0px;left: 925px;
+    }
+}

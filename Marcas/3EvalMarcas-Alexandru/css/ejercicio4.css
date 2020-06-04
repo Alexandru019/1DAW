@@ -1,0 +1,98 @@
+#ejercicio4{
+    position: relative;
+}
+#contenido3D{
+    width: 250px; height: 150px;
+    position: absolute;
+    top:125px;left: 375px;
+    perspective: 700px;
+}
+#anuncio{
+    width: 100%;height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: giroCaja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#anuncio div{
+    width: 100%;height: 100%;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Fraktur BT', arial;
+
+}
+
+#anuncio div:nth-child(1){
+    transform: rotateX(-90deg)translateZ(75px);
+    background-color: purple;
+}
+#anuncio div:nth-child(2){
+    transform: rotateX(90deg)translateZ(75px);
+    background-color: aqua;
+}
+#anuncio div:nth-child(3){
+    transform: rotateY(180deg)translateZ(75px);
+    background-color: red;
+}
+#anuncio div:nth-child(4){
+    transform: translateZ(75px);
+    background-color: green;
+}
+#anuncio div:nth-child(5){
+    width: 150px;height: 150px;
+    background-image: url("../imagenes/solvam.jpg");
+    transform: rotateY(-90deg)translateZ(75px);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#anuncio div:nth-child(6){
+    width: 150px;height: 150px;
+    background-image: url("../imagenes/solvam.jpg");
+    transform: rotateY(90deg)translateZ(175px);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+
+@keyframes giroCaja{
+    0%{
+        top: 0px;left: 0px;
+        transform: rotateX(0deg);
+    }
+    14.29%{
+        transform: rotateX(90deg);
+        top: 0px;left: 0px;
+    }
+    28.58%{
+        transform: rotateX(90deg);
+        top: 0px;left:315px;
+    }
+    42.87%{
+        transform: rotateX(180deg);
+        top: 0px;left:315px;
+    }
+    57.16%{
+        transform: rotateX(180deg);
+        top: 0px;left:-315px;
+    }
+    71.45%{
+        transform: rotateX(270deg);
+        top: 0px;left:-315px;
+    }
+    85.74%{
+        transform: rotateX(270deg);
+        top: 0px;left:0px;
+    }
+    100%{
+        transform: rotateX(360deg);
+        top: 0px;left: 0px;
+    }
+
+}

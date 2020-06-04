@@ -1,0 +1,41 @@
+#ejercicio1 div:nth-child(1){
+    width: 100px;height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 25px;
+    box-shadow: 5px 10px 7px 0px rgba(0,0,0,0.52),-5px -10px 7px 0px rgba(0,0,0,0.52);
+}
+#ejercicio1 div:nth-child(2){
+    width: 100px;height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 25px;
+    font-family: Verdana;
+    text-align: center;
+    background-color: rgba(0,0,0,0.52);
+    text-shadow: 1px 1px 1px rgba(214, 214, 214, 1),2px 2px 1px rgba(214, 214, 214, 0.70),3px 3px 1px rgba(214, 214, 214, 0.30);
+}
+#ejercicio1 div:nth-child(3){
+    width: 100px;height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 25px;
+    box-shadow: inset 5px 10px 5px 0px rgba(84,255,232,1);
+    transform: rotateX(25deg)rotateY(15deg);
+}
+#ejercicio1 div:nth-child(4){
+    width: 100px;height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 20px;
+    box-shadow: 20px 20px 5px 0px rgba(0,0,0,1);
+    transform: rotateX(25deg)rotateY(15deg)scale(0.5)rotateZ(15deg);
+}
+#ejercicio1 div:nth-child(5){
+    width: 100px;height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 25px;
+    box-shadow: 5px 5px 5px 0px rgba(217,59,59,1),inset 3px 7px 5px 0px rgba(49,222,130,0.6);
+    transform: rotateZ(45deg);
+}

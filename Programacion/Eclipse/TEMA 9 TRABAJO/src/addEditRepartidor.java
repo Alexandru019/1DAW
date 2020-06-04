@@ -179,6 +179,7 @@ public class addEditRepartidor {
 			frame.setTitle("Añadir Repartidor");
 		}else {
 			spinner.setValue(Integer.parseInt((String) CadenaRecibida.get(0)));
+			spinner.setEnabled(false);
 			tf1.setText((String) CadenaRecibida.get(1));
 			comboBox.setSelectedItem(CadenaRecibida.get(2));
 			btnADD.setVisible(false);
